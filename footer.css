@@ -1,0 +1,129 @@
+/* overall nav bar css */
+.navbar {           
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 1440px;
+  height: 410px;
+  left: 0px;
+
+  background: #FFF6EB;
+}
+
+/* text formatting css */
+.navbar a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #C10628;
+}
+
+/* positioning for about */
+.navbar a.pos {
+  position: absolute;
+  left: 60.97%;
+  right: 36.39%;
+  top: 28.05%;
+  bottom: 67.07%;
+}
+
+/* positioning for current events */
+.navbar a.pos2 {
+  position: absolute;
+  white-space: nowrap;
+  left: 68.06%;
+  right: 28.4%;
+  top: 28.05%;
+  bottom: 67.07%;
+}
+
+/* positioning for AI ART */
+.main {
+  position: absolute;
+  white-space: nowrap;
+  left: 47.43%;
+  right: 47.36%;
+  top: 59.5%;
+  bottom: 65.85%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #C10628;
+}
+
+/* positioning for art */
+.navbar a.pos4 {
+  position: absolute;
+  left: 34.38%;
+  right: 61.6%;
+  top: 28.05%;
+  bottom: 67.07%;
+}
+
+/* positioning for home */
+.navbar a.pos5 {
+  position: absolute;
+  left: 26.11%;
+  right: 70%;
+  top: 28.05%;
+  bottom: 67.07%;
+}
+
+/* styling for the divider */
+hr {
+  position: absolute;
+  left: 15.28%;
+  right: 15.28%;
+  top: 70%;
+  bottom: 54.15%;
+
+  border: 1px solid #C10628;
+}
+
+/* formatting for copyright */
+.copyright {
+  position: absolute;
+  left: 42.64%;
+  right: 50.69%;
+  top: 86.59%;
+  bottom: 8.54%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  text-align: center;
+
+  color: #C10628;
+}
+
+/* formatting for privacy */
+.privacy {
+  position: absolute;
+  left: 50.14%;
+  right: 42.71%;
+  top: 86.59%;
+  bottom: 8.54%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  text-align: center;
+
+  color: #C10628;
+}
