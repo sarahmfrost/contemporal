@@ -1,5 +1,39 @@
+
+#title {
+  color: #C10628;
+  background: #FFF6EB;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+
+#menu {
+  color: #C10628;
+  background: #FFF6EB;
+  left: 0px;
+}
+
+
+#navLink {
+  font-family: Roboto;
+  color: #C10628;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  float: right;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+#navLink:hover {
+  color: black;
+}
+
+
+
 /* overall nav bar css */
-.navbar {           
+.navbar {
   overflow: hidden;
   position: fixed;
   bottom: 0;
