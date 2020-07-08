@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
 .grid-container {
     display: grid;
@@ -15,7 +15,7 @@
 }
 
 .title {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   color: #C10628;
   font-size: 36px;
   position: absolute;
@@ -33,7 +33,7 @@
 
 
 #navLink {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   white-space: nowrap;
   color: #C10628;
   font-size: 24.9057px;
@@ -65,7 +65,7 @@
 
 /* text formatting css */
 .navbar a {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -102,7 +102,7 @@
   top: 59.5%;
   bottom: 65.85%;
 
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -151,7 +151,7 @@ hr {
   top: 86.59%;
   bottom: 8.54%;
 
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -170,7 +170,7 @@ hr {
   top: 86.59%;
   bottom: 8.54%;
 
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
