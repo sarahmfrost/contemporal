@@ -7,11 +7,10 @@
 }
 
 
-.nav-child {
-  width: 50%;
-  float: left;
-  padding: 20px;
-  border: 2px solid red;
+.grid-child {
+  width: 100%;
+  float: right;
+  padding: 0px;
 }
 
 .title {
@@ -41,14 +40,64 @@
   text-align: center;
   float: right;
   margin-right: 50px;
-  margin-left: 50px;
-  margin-top: 30px;
+  margin-left: 20px;
+  margin-top: 30px;*/
 }
 
 #navLink:hover {
   color: black;
 }
 
+.margart {
+  font-family: 'Roboto', sans-serif;
+  white-space: nowrap;
+  color: #C10628;
+  font-size: 24.9057px;
+  width: 70px;
+  text-align: center;
+  float: right;
+  margin-right:20px;
+  margin-left:20px;
+  margin-top: 30px;
+}
+
+.margart:hover {
+  color:black;
+}
+
+.margevents {
+  font-family: 'Roboto', sans-serif;
+  white-space: nowrap;
+  color: #C10628;
+  font-size: 24.9057px;
+  width: 70px;
+  text-align: center;
+  float: right;
+  margin-right:200px;
+  margin-left:20px;
+  margin-top: 30px;
+}
+
+.margevents:hover {
+  color:black;
+}
+
+.margabt {
+  font-family: 'Roboto', sans-serif;
+  white-space: nowrap;
+  color: #C10628;
+  font-size: 24.9057px;
+  width: 70px;
+  text-align: center;
+  float: right;
+  margin-right:70px;
+  margin-left:20px;
+  margin-top: 30px;
+}
+
+.margabt:hover {
+  color:black;
+}
 
 
 /* overall nav bar css */
