@@ -7,7 +7,6 @@
 
 
 .nav-child {
-
   width: 50%;
   float: left;
   padding: 20px;
@@ -34,6 +33,7 @@
 
 #navLink {
   font-family: Roboto;
+  white-space: nowrap;
   color: #C10628;
   font-size: 24.9057px;
   width: 70px;
@@ -179,3 +179,4 @@ hr {
 
   color: #C10628;
 }
+
