@@ -19,6 +19,7 @@
   font-size: 36px;
   position: absolute;
   white-space: nowrap;
+  font-weight: bold;
   left: 2.78%;
   right: 89.38%;
   top: 4.1%;
@@ -41,7 +42,7 @@
   float: right;
   margin-right: 50px;
   margin-left: 20px;
-  margin-top: 30px;*/
+  margin-top: 30px;
 }
 
 #navLink:hover {
