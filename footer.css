@@ -103,12 +103,11 @@
 
 /* overall nav bar css */
 .navbar {
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
+  position: absolute;
   width: 1440px;
   height: 410px;
   left: 0px;
+  top: 1912px;
 
   background: #FFF6EB;
 }
@@ -145,11 +144,11 @@
 
 /* positioning for AI ART bottom*/
 .main {
-  position: fixed;
+  position: absolute;
   white-space: nowrap;
   left: 47.43%;
   right: 47.36%;
-  top: 59.5%;
+  top: 2023px;
   bottom: 65.85%;
 
   font-family: 'Roboto', sans-serif;
@@ -184,10 +183,10 @@
 
 /* styling for the divider */
 hr {
-  position: fixed;
+  position: absolute;
   left: 15.28%;
   right: 15.28%;
-  top: 70%;
+  top: 2100px;
   bottom: 54.15%;
 
   border: 1px solid #C10628;
@@ -195,10 +194,10 @@ hr {
 
 /* formatting for copyright */
 .copyright {
-  position: fixed;
+  position: absolute;
   left: 42.64%;
   right: 50.69%;
-  top: 86.59%;
+  top: 2250px;
   bottom: 8.54%;
 
   font-family: 'Roboto', sans-serif;
@@ -214,10 +213,10 @@ hr {
 
 /* formatting for privacy */
 .privacy {
-  position: fixed;
+  position: absolute;
   left: 50.14%;
   right: 42.71%;
-  top: 86.59%;
+  top: 2250px;
   bottom: 8.54%;
 
   font-family: 'Roboto', sans-serif;
