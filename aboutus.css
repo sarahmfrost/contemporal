@@ -1,0 +1,161 @@
+
+.row {
+    position: absolute;
+    width: 448px;
+    height: 996px;
+    left: 62px;
+    top: 136px;
+    background: #FFF6EB;
+    margin-bottom: 400px;    
+}
+.sarahpic{
+    position: absolute;
+    width: 120px;
+    height: 115px;
+    left: 5%;
+
+
+}
+.sarahtxt {
+    position: absolute;
+    width: 251px;
+    height: 133px;
+    left: 36%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.nancypic{
+    position: absolute;
+    width: 131px;
+    height: 131px;
+    top: 25%;
+    left: 65%;
+
+}
+.nancytxt {
+    position: absolute;
+    width: 251px;
+    height: 133px;
+    left: 5%;
+    top: 25%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.diyapic{
+    position: absolute;
+    width: 122px;
+    height: 131px;
+    top: 45%;
+    left: 5%;
+}
+.diyatxt{
+    position: absolute;
+    width: 251px;
+    height: 133px;
+    left: 36%;
+    top: 45%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.aureliepic{
+    position: absolute;
+    width: 122px;
+    height: 131px;
+    top: 65%;
+    left: 65%;
+}
+.aurelietxt{
+    position: absolute;
+    width: 251px;
+    height: 133px;
+    left: 5%;
+    top: 65%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+}
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+.boxed {
+    position: absolute;
+    width: 385px;
+    height: 58px;
+    left: 757px;
+    top: 127px;
+    
+    background: #FFF6EB;
+}
+
+.proj {
+    position: absolute;
+    width: 354px;
+    height: 42px;
+    top: -50%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+
+    color: #000000;
+}
+.about {
+    position: absolute;
+    width: 741px;
+    height: 680px;
+    left: 598px;
+    top: 243px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+
+    color: #000000;
+}

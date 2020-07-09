@@ -108,6 +108,7 @@
   width: 1440px;
   height: 410px;
   left: 0px;
+  padding-top: 100px;
 
   background: #FFF6EB;
 }
@@ -144,7 +145,7 @@
 
 /* positioning for AI ART */
 .main {
-  position: absolute;
+  position: fixed;
   white-space: nowrap;
   left: 47.43%;
   right: 47.36%;
@@ -183,7 +184,7 @@
 
 /* styling for the divider */
 hr {
-  position: absolute;
+  position: fixed;
   left: 15.28%;
   right: 15.28%;
   top: 70%;
@@ -194,7 +195,7 @@ hr {
 
 /* formatting for copyright */
 .copyright {
-  position: absolute;
+  position: fixed;
   left: 42.64%;
   right: 50.69%;
   top: 86.59%;
@@ -213,7 +214,7 @@ hr {
 
 /* formatting for privacy */
 .privacy {
-  position: absolute;
+  position: fixed;
   left: 50.14%;
   right: 42.71%;
   top: 86.59%;
