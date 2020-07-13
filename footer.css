@@ -103,9 +103,9 @@
 
 /* overall nav bar css */
 .navbar {
-  padding: 70px 0;
+  position: absolute;
   width: 100%;
-  height: 130px;
+  height: 410px;
   left: 0px;
   top: 1912px;
 
@@ -129,6 +129,8 @@
   position: absolute;
   left: 60.97%;
   right: 36.39%;
+  top: 28.05%;
+  bottom: 67.07%;
 }
 
 /* positioning for current events */
@@ -137,6 +139,9 @@
   white-space: nowrap;
   left: 68.06%;
   right: 28.4%;
+  top: 28.05%;
+  bottom: 67.07%;
+
 }
 
 /* positioning for AI ART bottom*/
@@ -145,7 +150,8 @@
   white-space: nowrap;
   left: 47.43%;
   right: 47.36%;
-  bottom: -150px;
+  top: 2023px;
+  bottom: 65.85%;
 
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -164,6 +170,8 @@
   position: absolute;
   left: 34.38%;
   right: 61.6%;
+  top: 28.05%;
+  bottom: 67.07%;
 }
 
 /* positioning for home */
@@ -171,6 +179,8 @@
   position: absolute;
   left: 26.11%;
   right: 70%;
+  top: 28.05%;
+  bottom: 67.07%;
 }
 
 /* styling for the divider */
@@ -178,7 +188,8 @@ hr {
   position: absolute;
   left: 15.28%;
   right: 15.28%;
-  bottom: -225px;
+  top: 2100px;
+  bottom: 54.15%;
 
   border: 1px solid #C10628;
 }
@@ -188,7 +199,8 @@ hr {
   position: absolute;
   left: 42.64%;
   right: 50.69%;
-  bottom: -300px;
+  top: 2250px;
+  bottom: 8.54%;
 
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -206,7 +218,8 @@ hr {
   position: absolute;
   left: 50.14%;
   right: 42.71%;
-  bottom: -300px;
+  top: 2250px;
+  bottom: 8.54%;
 
   font-family: 'Roboto', sans-serif;
   font-style: normal;
