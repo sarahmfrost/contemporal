@@ -1,5 +1,7 @@
+# have to install these on your computer
 from bs4 import BeautifulSoup
 import requests as rq
+
 import os
 
 r2 = rq.get("https://collections.si.edu/search/gallery.htm?og=national-museum-of-the-american-indian")
