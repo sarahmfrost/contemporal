@@ -2,7 +2,7 @@
 .row {
     position: absolute;
     width: 448px;
-    height: 996px;
+    height: 780px;
     left: 62px;
     top: 136px;
     background: #FFF6EB;
@@ -37,7 +37,7 @@
     position: absolute;
     width: 131px;
     height: 131px;
-    top: 25%;
+    top: 30%;
     left: 65%;
 
 }
@@ -46,7 +46,7 @@
     width: 251px;
     height: 133px;
     left: 5%;
-    top: 25%;
+    top: 30%;
 
     font-family: Roboto;
     font-style: normal;
@@ -63,7 +63,7 @@
     position: absolute;
     width: 122px;
     height: 131px;
-    top: 45%;
+    top: 55%;
     left: 5%;
 }
 .diyatxt{
@@ -71,7 +71,7 @@
     width: 251px;
     height: 133px;
     left: 36%;
-    top: 45%;
+    top: 55%;
 
     font-family: Roboto;
     font-style: normal;
@@ -89,15 +89,15 @@
     position: absolute;
     width: 122px;
     height: 131px;
-    top: 65%;
-    left: 65%;
+    top: 75%;
+    left: 80%;
 }
 .aurelietxt{
     position: absolute;
     width: 251px;
     height: 133px;
     left: 5%;
-    top: 65%;
+    top: 80%;
 
     font-family: Roboto;
     font-style: normal;
