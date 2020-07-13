@@ -104,8 +104,8 @@
 /* overall nav bar css */
 .navbar {
   padding: 70px 0;
-  width: 1440px;
-  height: 150px;
+  width: 100%;
+  height: 130px;
   left: 0px;
   top: 1912px;
 
