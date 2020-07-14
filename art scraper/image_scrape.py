@@ -31,3 +31,16 @@ for index, img in enumerate(links):
             f.write(img_data)
     # i += 1
 
+links2 = []
+for link in soup2.find_all('a'):
+    if link.has_attr('href'):
+        links2.append(link.attrs['href'])
+
+links2 = [lin for lin in links2 if 'results.htm?' in lin]
+
+links3 = []
+for lin in links2:
+    lin = lin[:0] + "https://collections.si.edu/search/" + lin[0:]
+    links3.append(lin)
+
+print(links3)
