@@ -1,9 +1,9 @@
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+@300&
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 3vh;
     overflow: hidden;
 
 }
@@ -12,7 +12,8 @@
   display: none;
 }
 .grid-child {
-  width: 80%;
+  width: 80vw;
+  height: 5vw;
   float: right;
   padding: 0px;
 }
@@ -42,14 +43,14 @@
 .title {
   font-family: 'Roboto', sans-serif;
   color: #C10628;
-  font-size: 36px;
+  font-size: 4vw;
   position: absolute;
   white-space: nowrap;
   font-weight: bold;
-  left: 2.78%;
-  right: 89.38%;
-  top: 4.1%;
-  bottom: 4.69%;
+  left: 2.78vw;
+  right: 89.38vw;
+  top: 2vh;
+  bottom: 1vh;
 }
 
 #menu {
@@ -79,13 +80,13 @@
   font-family: 'Roboto', sans-serif;
   white-space: nowrap;
   color: #C10628;
-  font-size: 24.9057px;
-  width: 70px;
+  font-size: 2vw;
+  width: 6.8vw;
   text-align: center;
   float: right;
-  margin-right:20px;
-  margin-left:20px;
-  margin-top: 30px;
+  margin-right:1.9vw;
+  margin-left:1.9vw;
+  margin-top: 4vh;
 }
 
 .margart:hover {
@@ -96,13 +97,13 @@
   font-family: 'Roboto', sans-serif;
   white-space: nowrap;
   color: #C10628;
-  font-size: 24.9057px;
-  width: 70px;
+  font-size: 2vw;
+  width: 6.8vw;
   text-align: center;
   float: right;
-  margin-right:200px;
-  margin-left:20px;
-  margin-top: 30px;
+  margin-right:18vw;
+  margin-left:1.9vw;
+  margin-top: 4vh;
 }
 
 .margevents:hover {
@@ -113,13 +114,13 @@
   font-family: 'Roboto', sans-serif;
   white-space: nowrap;
   color: #C10628;
-  font-size: 24.9057px;
-  width: 70px;
+  font-size: 2vw;
+  width: 6.8vw;
   text-align: center;
   float: right;
-  margin-right:70px;
-  margin-left:20px;
-  margin-top: 30px;
+  margin-right:6.8vw;
+  margin-left:1.9vw;
+  margin-top: 4vh;
 }
 
 .margabt:hover {
@@ -131,7 +132,7 @@
 .navbar {
   position: absolute;
   width: 100%;
-  height: 410px;
+  height: 53vh;
   left: 0px;
   top: 1912px;
 
