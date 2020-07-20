@@ -1,74 +1,95 @@
 # have to install these on your computer
 from bs4 import BeautifulSoup
 import requests as rq
-
+import csv 
 import os
 import re
-import csv 
 
-# #testing to go into each art piece for 1 category
-# content = []
-# c1 = rq.get("https://collections.si.edu/search/results.htm?q=%22Adornment%2FJewelry%22&fq=data_source%3A%22National+Museum+of+the+American+Indian%22&fq=online_media_type%3A%22Images%22&view=grid")
-# contentsoup = BeautifulSoup(c1.text, "html.parser")
-# clink = []
-# for link in contentsoup.find_all('a'):
+# mainpage = rq.get("https://collections.si.edu/search/gallery.htm?og=national-museum-of-the-american-indian")
+# mainpagesoup = BeautifulSoup(mainpage.text, "html.parser")
+
+# categories = []
+# for link in mainpagesoup.find_all('a'):
 #     if link.has_attr('href'):
-#         clink.append(link.attrs['href'])
+#         categories.append(link.attrs['href'])
+# categories = [lin for lin in categories if 'results.htm?' in lin]
 
-# clink = [lin for lin in clink if 'results.htm?' in lin]
-
-# clink1 = []
-
-# for lin in clink:
+# #gets link by category
+# categorylinks = []
+# for lin in categories:
 #     lin = lin[:0] + "https://collections.si.edu/search/" + lin[0:]
-#     clink1.append(lin)
+#     categorylinks.append(lin)
 
-# for i in clink1:
-#     c2 = rq.get(i)
-#     contentsoup1 = BeautifulSoup(c2.text, "html.parser")
-#     y = contentsoup1.findAll("div",{"class":"meta"})
-#     for detail in y:
-#         content.append(detail)
-with open('content.csv', mode='w') as content:
-    content = csv.writer(content, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
-    content.writerow(["name", "culture", "media", "otype", "place", "history"])
 
-c1 = rq.get("https://collections.si.edu/search/detail/edanmdm:NMAI_248665?hlterm=%26quot%3BPainting%2FDrawing%2FPrint%26quot%3B")
-contentsoup = BeautifulSoup(c1.text, "html.parser")
+#testing to go into each art piece for 1 category
+paintings = rq.get("https://collections.si.edu/search/results.htm?q=%22Painting%2FDrawing%2FPrint%22&fq=data_source%3A%22National+Museum+of+the+American+Indian%22&fq=online_media_type%3A%22Images%22&view=grid")
+paintingsoup = BeautifulSoup(paintings.text, "html.parser")
+individuals = []
+for link in paintingsoup.find_all('a'):
+    if link.has_attr('href'):
+        individuals.append(link.attrs['href'])
+        
+individuals = [lin for lin in individuals if '=data_source' in lin]
+individuals = [lin for lin in individuals if '/detail' in lin]
 
-name = contentsoup.findAll("dd",{"class":"physicalDescription-first"})
-name = name[0].getText()
-name = re.sub(' +',' ',name)
 
-culture = contentsoup.findAll("dd",{"class":"name-first"})
-culture = culture[0].getText()
-culture = re.sub(' +',' ',culture)
-print('<p class="content"> CULTURE/PEOPLE:' + culture.replace("Search this", "") + "</p>")
-# f.write('<p class="content"> CULTURE/PEOPLE:' + culture + '</p>' )
+contentlinks = [] #links of all individual pages
 
-media = contentsoup.findAll("dd",{"class":"physicalDescription"})
-media = media[1].getText()
-media = re.sub(' +',' ',media)
-print('<p class="content"> MEDIA/MATERIALS:' + media + '</p>')
+for lin in individuals:
+    lin = lin[:0] + "https://collections.si.edu" + lin[0:]
+    contentlinks.append(lin)
 
-otype = contentsoup.findAll("dd",{"class":"objectType-first"})
-otype = otype[0].getText()
-otype = re.sub(' +',' ',otype)
-print('<p class="content"> OBJECT TYPE:' + otype + '</p>')
+# count = 0
 
-place = contentsoup.findAll("dd",{"class":"place-first"})
-place = place[0].getText()
-place = re.sub(' +',' ',place)
-print('<p class="content"> PLACE:' + place + '</p>')
+with open('art scraper/content.csv', mode='a') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(["title", "culture/people", "media/materials", "object type", "place", "collection history"])
+    for i in contentlinks:
+        content = rq.get(i)
+        print(i)
+        # count += 1
+        # if count == 20:
+        #     break
+        contentsoup = BeautifulSoup(content.text, "html.parser")
 
-history = contentsoup.findAll("dd",{"class":"notes-first"})
-history = history[0].getText()
-history = re.sub(' +',' ',history)
-print('<p class="content"> COLLECTION HISTORY::' + history + '</p>')
+        name = contentsoup.findAll("dd",{"class":"physicalDescription-first"})
+        if name: #checks for empy lists
+            name = name[0].getText()
+            name = name.strip()
+        else:
+            name = None
+        culture = contentsoup.findAll("dd",{"class":"name-first"})
+        if culture:
+            culture = culture[0].getText()
+            culture = culture.strip()
+            culture = culture.replace("Search this", "")
+        # print('<p class="content"> CULTURE/PEOPLE:' + culture + '</p>' )
 
-with open('content.csv', mode='w') as content:
-    content = csv.writer(content, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        media = contentsoup.findAll("dd",{"class":"physicalDescription"})
+        if media:
+            media = media[1].getText()
+            media = media.strip()
+            media = media.replace('"', '')
+        # print('<p class="content"> MEDIA/MATERIALS:' + media + '</p>')
 
-    content.writerow([name, culture, media, otype, place, history])
+        otype = contentsoup.findAll("dd",{"class":"objectType-first"})
+        if otype:
+            otype = otype[0].getText()
+            otype = otype.strip()
+        # print('<p class="content"> OBJECT TYPE:' + otype + '</p>')
 
+        place = contentsoup.findAll("dd",{"class":"place-first"})
+        if place:
+            place = place[0].getText()
+            place = place.strip()
+        # print('<p class="content"> PLACE:' + place + '</p>')
+
+        history = contentsoup.findAll("dd",{"class":"notes-first"})
+        if history:
+            history = history[0].getText()
+            history = history.strip()
+            history = history.replace('"', '')
+        # print('<p class="content"> COLLECTION HISTORY::' + history + '</p>')
+        if name:
+            writer.writerow([name, culture, media, otype, place, history])
