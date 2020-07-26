@@ -40,10 +40,10 @@ for link in categories:
 
     with open('art scraper/content.csv', mode='a') as csvfile:
         writer = csv.writer(csvfile)
-        writer.writerow(["title", "culture/people", "media/materials", "object type", "place", "collection history"])
+        writer.writerow(["title", "culture/people", "media/materials", "object type", "place", "collection history","image"])
         for i in contentlinks:
             content = rq.get(i)
-            print(i)
+            # print(i)
             # count += 1
             # if count == 20:
             #     break
@@ -87,5 +87,16 @@ for link in categories:
                 history = history.strip()
                 history = history.replace('"', '')
             # print('<p class="content"> COLLECTION HISTORY::' + history + '</p>')
+
+            for div in contentsoup.find_all('div', 'media'):
+                image = div.find('img')
+                print(image['src'])
+
+            # image = contentsoup.find_all('full-size image')
+            # print(image)
+            # if image:
+            #     image = image[0].get('src')
+
+
             if name:
-                writer.writerow([name, culture, media, otype, place, history])
+                writer.writerow([name, culture, media, otype, place, history, image])
