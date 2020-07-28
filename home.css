@@ -91,7 +91,15 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 
-/*.feat1{
-  position: absolute;
-  float: left;
-}*/
+a.button {
+    position: absolute;
+    top: 1580px;
+    left: 635px;
+
+    font: bold 20px Arial;
+    text-decoration: none;
+    background-color: #C10628;
+    color: white;
+    padding: 20px 40px 20px 40px;
+    border-radius: 5px
+}

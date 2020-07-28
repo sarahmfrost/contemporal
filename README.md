@@ -1,1 +1,1 @@
-# ai_art
+# contemporal.co
