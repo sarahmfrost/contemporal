@@ -90,13 +90,8 @@ for link in categories:
 
             for div in contentsoup.find_all('div', 'media'):
                 image = div.find('img')
-                print(image['src'])
-
-            # image = contentsoup.find_all('full-size image')
-            # print(image)
-            # if image:
-            #     image = image[0].get('src')
-
+                image = image['src'].replace("max=140","")
+                # print(image)
 
             if name:
                 writer.writerow([name, culture, media, otype, place, history, image])
