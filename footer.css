@@ -48,13 +48,13 @@
 .title {
   font-family: 'Roboto', sans-serif;
   color: #C10628;
-  font-size: 4vw;
+  font-size: 3vw;
   position: absolute;
   white-space: nowrap;
   font-weight: bold;
-  left: 2.78vw;
+  left: 1.3vw;
   right: 89.38vw;
-  top: 17px;
+  top: 30px;
   bottom: 30px;
 }
 
@@ -180,8 +180,7 @@
 .main {
   position: absolute;
   white-space: nowrap;
-  left: 47.43%;
-  right: 47.36%;
+  right: 45vw;
   top: 2023px;
   bottom: 65.85%;
 
@@ -229,8 +228,7 @@ hr {
 /* formatting for copyright */
 .copyright {
   position: absolute;
-  left: 42.64%;
-  right: 50.69%;
+  right: 55vw;
   top: 2250px;
   bottom: 8.54%;
 
