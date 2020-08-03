@@ -16,6 +16,7 @@
   height: 5vw;
   float: right;
   padding: 0px;
+  z-index: 2;
 }
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -100,13 +101,12 @@
 
 .margevents {
   font-family: 'Roboto', sans-serif;
-  white-space: nowrap;
   color: #C10628;
   font-size: 2vw;
   width: 6.8vw;
   text-align: center;
   float: right;
-  margin-right:18vw;
+  margin-right:4vw;
   margin-left:1.9vw;
   margin-top: 25px;
 }
@@ -117,18 +117,33 @@
 
 .margabt {
   font-family: 'Roboto', sans-serif;
-  white-space: nowrap;
   color: #C10628;
   font-size: 2vw;
   width: 6.8vw;
   text-align: center;
   float: right;
-  margin-right:6.8vw;
+  margin-right:4vw;
   margin-left:1.9vw;
   margin-top: 25px;
 }
 
 .margabt:hover {
+  color:black;
+}
+
+.marghome{
+  font-family: 'Roboto', sans-serif;
+  color: #C10628;
+  font-size: 2vw;
+  width: 6.8vw;
+  text-align: center;
+  float: right;
+  margin-right:4vw;
+  margin-left:1.9vw;
+  margin-top: 25px;
+}
+
+.marghome:hover {
   color:black;
 }
 
