@@ -62,7 +62,13 @@
   color: #C10628;
   left: 0px;
 }
-
+.logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 25vw;
+  top: -0.5vw;
+}
 
 #navLink {
   font-family: 'Roboto', sans-serif;
