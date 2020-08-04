@@ -1,0 +1,21 @@
+html{
+    box-sizing: border-box;
+}
+
+.title-box-container{
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    left: 44vw;
+    top: 10vh;
+}
+
+
+#twitter-id{
+    margin: auto;
+    padding: 2vh 2vw 2vh 2vw;
+    text-align: center;
+    font-size: 4vw;
+    background-color:  #FFF6EB;
+}

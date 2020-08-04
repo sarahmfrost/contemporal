@@ -48,7 +48,7 @@
 .title {
   font-family: 'Roboto', sans-serif;
   color: #C10628;
-  font-size: 4vw;
+  font-size: 3vw;
   position: absolute;
   white-space: nowrap;
   font-weight: bold;
@@ -62,7 +62,13 @@
   color: #C10628;
   left: 0px;
 }
-
+.logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 25vw;
+  top: -0.5vw;
+}
 
 #navLink {
   font-family: 'Roboto', sans-serif;
@@ -100,13 +106,12 @@
 
 .margevents {
   font-family: 'Roboto', sans-serif;
-  white-space: nowrap;
   color: #C10628;
   font-size: 2vw;
   width: 6.8vw;
   text-align: center;
   float: right;
-  margin-right:18vw;
+  margin-right:4vw;
   margin-left:1.9vw;
   margin-top: 25px;
 }
@@ -117,13 +122,12 @@
 
 .margabt {
   font-family: 'Roboto', sans-serif;
-  white-space: nowrap;
   color: #C10628;
   font-size: 2vw;
   width: 6.8vw;
   text-align: center;
   float: right;
-  margin-right:6.8vw;
+  margin-right:4vw;
   margin-left:1.9vw;
   margin-top: 25px;
 }
@@ -132,12 +136,28 @@
   color:black;
 }
 
+.marghome{
+  font-family: 'Roboto', sans-serif;
+  color: #C10628;
+  font-size: 2vw;
+  width: 6.8vw;
+  text-align: center;
+  float: right;
+  margin-right:4vw;
+  margin-left:1.9vw;
+  margin-top: 25px;
+}
+
+.marghome:hover {
+  color:black;
+}
+
 
 /* overall nav bar css */
 .navbar {
   position: absolute;
   width: 100%;
-  height: 53vh;
+  height: 40vh;
   left: 0px;
   top: 1912px;
 
@@ -180,9 +200,9 @@
 .main {
   position: absolute;
   white-space: nowrap;
-  left: 47.43%;
+  left: 43%;
   right: 47.36%;
-  top: 2023px;
+  top: 1995px;
   bottom: 65.85%;
 
   font-family: 'Roboto', sans-serif;
@@ -220,7 +240,7 @@ hr {
   position: absolute;
   left: 15.28%;
   right: 15.28%;
-  top: 2100px;
+  top: 2050px;
   bottom: 54.15%;
 
   border: 1px solid #C10628;
@@ -229,9 +249,9 @@ hr {
 /* formatting for copyright */
 .copyright {
   position: absolute;
-  left: 42.64%;
+  left: 40%;
   right: 50.69%;
-  top: 2250px;
+  top: 2150px;
   bottom: 8.54%;
 
   font-family: 'Roboto', sans-serif;
@@ -250,7 +270,7 @@ hr {
   position: absolute;
   left: 50.14%;
   right: 42.71%;
-  top: 2250px;
+  top: 2150px;
   bottom: 8.54%;
 
   font-family: 'Roboto', sans-serif;
