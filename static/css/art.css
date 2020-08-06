@@ -1,4 +1,14 @@
 
+.label {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    justify-content: center;
+    right: 50%;
+    top: 60px;
+}
+
+
 .grid {
     padding-top: 40px;
     display: flex;
@@ -55,3 +65,4 @@
 
     color: #000000;
 }
+
