@@ -63,11 +63,11 @@
   left: 0px;
 }
 .logo {
-  width: 8vw;
-  height: 8vw;
+  width: 4vw;
+  height: 4vw;
   position: absolute;
-  left: 25vw;
-  top: -0.8vw;
+  left: 27vw;
+  top: 0.8vw;
 }
 
 #navLink {
