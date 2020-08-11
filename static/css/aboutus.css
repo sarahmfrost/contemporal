@@ -1,114 +1,95 @@
 
 .row {
     position: absolute;
-    width: 448px;
-    height: 780px;
-    left: 62px;
-    top: 136px;
+    width: auto;
+    max-width: 33%;
+    height: auto;
+    left: 5vw;
+    top: 14vw;
     background: #FFF6EB;
     margin-bottom: 16px;    
 }
-.sarahpic{
-    position: absolute;
-    width: 120px;
-    height: 115px;
-    left: 5%;
+
+.team-grid {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  float: left;
+  max-width: 500px;
+}
 
 
+.team-grid p {
+  max-width: 250px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+
+}
+.team-grid img {
+  width: 50%;
+  padding: 0 10px 20px;
+}
+.ourteam{
+  position: absolute;
+  top: 10vw;
+  left: 16vw;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 .sarahtxt {
-    position: absolute;
-    width: 251px;
-    height: 133px;
-    left: 36%;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     text-align: center;
 
     color: #000000;
-}
-.nancypic{
-    position: absolute;
-    width: 131px;
-    height: 131px;
-    top: 30%;
-    left: 65%;
-
 }
 .nancytxt {
-    position: absolute;
-    width: 251px;
-    height: 133px;
-    left: 5%;
-    top: 30%;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 18px;    
     display: flex;
     align-items: center;
     text-align: center;
 
     color: #000000;
-}
-.diyapic{
-    position: absolute;
-    width: 122px;
-    height: 131px;
-    top: 55%;
-    left: 5%;
 }
 .diyatxt{
-    position: absolute;
-    width: 251px;
-    height: 133px;
-    left: 36%;
-    top: 55%;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 18px;    
     display: flex;
     align-items: center;
     text-align: center;
 
     color: #000000;
-}
-
-.aureliepic{
-    position: absolute;
-    width: 122px;
-    height: 131px;
-    top: 75%;
-    left: 80%;
 }
 .aurelietxt{
-    position: absolute;
-    width: 251px;
-    height: 133px;
-    left: 5%;
-    top: 80%;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     text-align: center;
 
-    color: #000000;
+    color: #000000; 
 
 }
 html {
@@ -121,10 +102,10 @@ html {
 
 .boxed {
     position: absolute;
-    width: 385px;
-    height: 58px;
-    left: 757px;
-    top: 127px;
+    width: 30%;
+    height: 10vwpx;
+    left: 55%;
+    top: 9vw;
     
     background: #FFF6EB;
 }
@@ -142,10 +123,10 @@ html {
 }
 .about {
     position: absolute;
-    width: 741px;
-    height: 680px;
-    left: 598px;
-    top: 30%;
+    max-width: 50%;
+    max-height: 50%;
+    left: 43vw;
+    top: 25%;
 
     font-family: Montserrat;
     font-style: normal;
@@ -186,12 +167,11 @@ html {
   color: #C10628;
 }
 
-hr {
+.footer hr {
   position: absolute;
   left: 15.28%;
   right: 15.28%;
   top: 1140px;
-  bottom: 54.15%;
 
   border: 1px solid #C10628;
 }
