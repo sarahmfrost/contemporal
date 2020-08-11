@@ -2,15 +2,27 @@
 .label {
     font-weight: bold;
     text-align: center;
-    font-size: 30px;
-    justify-content: center;
-    right: 50%;
-    top: 60px;
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-family: canada-type-gibson, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    top: 100px;
+    left: 3vw;
+    position: absolute;
 }
 
+/* hr {
+    position: absolute;
+    left: 3vw;
+    right: 3vw;
+    top: 10vw;
+  
+    border: 1px solid #C10628;
+   }  */
 
 .grid {
-    padding-top: 40px;
+    padding-top: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

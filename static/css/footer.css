@@ -236,7 +236,7 @@
 }
 
 /* styling for the divider */
-hr {
+.footer hr {
   position: absolute;
   left: 15.28%;
   right: 15.28%;
