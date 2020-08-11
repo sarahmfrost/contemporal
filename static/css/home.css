@@ -68,8 +68,8 @@ img {vertical-align: middle;}
 
 a.button {
     position: absolute;
-    top: 230vh;
-    left: 42vw;
+    top: 179vh;
+    left: 43vw;
 
     font: bold 20px Arial;
     text-decoration: none;
@@ -83,3 +83,23 @@ a.button {
   top: ;
   bottom: ;
 }
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-auto-rows: 400px;
+  grid-gap: 100px;
+  grid-auto-flow: dense;
+}
+
+.container img {
+   width: 100%;
+   height: auto;
+}
+
+.horizontal{
+    grid-column: span 2;
+}
+
+
