@@ -2,13 +2,18 @@
 <html>
 
     <title> TWITTER </title>
-    
+  
     <head>
         <link href = 'https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
         <link href = 'https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link rel = "stylesheet" type = "text/css" href = "../static/css/footer.css">
         <link rel = "stylesheet" type = "text/css" href = "twitter.css">
         <script defer src = "https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity = "sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin = "anonymous"> </script>
+
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
 
     <body>
@@ -25,7 +30,32 @@
                 </div>
             </div>
         </header>
-        <main><a class="twitter-timeline" href="https://twitter.com/AmerindianW/lists/weblist?ref_src=twsrc%5Etfw" data-tweet-limit="3">A Twitter List by AmerindianW</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></main>
+        <!-- <main><a class="twitter-timeline" href="https://twitter.com/AmerindianW/lists/weblist?ref_src=twsrc%5Etfw" data-tweet-limit="3">A Twitter List by AmerindianW</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></main> -->
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="container">
+                <div class="col-md-4">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                Latest Tweets
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <a class="twitter-timeline" href="https://twitter.com/AmerindianW/lists/weblist?ref_src=twsrc%5Etfw" data-tweet-limit="3">A Twitter List by AmerindianW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+            </div>
+        </div>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
+
 
             <footer class="footer">
             <div class="navbar">
@@ -47,12 +77,12 @@
 
             <div class = "privacy"> Privacy–Terms </div>
             </footer>
-        <main>
+<!--         <main>
             <div class = "title-box-container">
                 <h1 id = "twitter-id"> TWITTER </h1>
-                <!--<script> GET https://api.twitter.com/1.1/statuses/jack.json?screen_name=twitterapi&count=2 </script>-->
+                <script> GET https://api.twitter.com/1.1/statuses/jack.json?screen_name=twitterapi&count=2 </script>
                 </div>
             </div>
-        </main>
+        </main> -->
     </body>
 </html>
