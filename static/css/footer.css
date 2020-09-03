@@ -96,7 +96,6 @@
   text-align: center;
   float: right;
   margin-right:1.9vw;
-  margin-left:1.9vw;
   margin-top: 25px;
 }
 
@@ -112,7 +111,6 @@
   text-align: center;
   float: right;
   margin-right:4vw;
-  margin-left:1.9vw;
   margin-top: 25px;
 }
 
@@ -128,7 +126,6 @@
   text-align: center;
   float: right;
   margin-right:4vw;
-  margin-left:1.9vw;
   margin-top: 25px;
 }
 
@@ -144,11 +141,25 @@
   text-align: center;
   float: right;
   margin-right:4vw;
-  margin-left:1.9vw;
   margin-top: 25px;
 }
 
 .marghome:hover {
+  color:black;
+}
+
+.margartis{
+  font-family: 'Roboto', sans-serif;
+  color: #C10628;
+  font-size: 2vw;
+  width: 6.8vw;
+  text-align: center;
+  float: right;
+  margin-right:6vw;
+  margin-top: 25px;
+}
+
+.margartis:hover {
   color:black;
 }
 
