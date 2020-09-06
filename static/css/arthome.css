@@ -1,4 +1,8 @@
 
+.body{
+    font-family: "Rubik";
+}
+
 .grid {
     padding-top: 40px;
     padding-left: 100px;
@@ -23,6 +27,7 @@ h1{
 
 .grid img{
     padding: 0 10px 10px;
+    border-radius: 20px;
     width: 300px;
     height: 300px;
     object-fit: cover;
@@ -33,6 +38,9 @@ figcaption {
     padding-bottom: 20px;
     text-align: center;
     text-decoration: none;
+    font-family: "Rubik";
+    font-weight: 500;
+    text-transform:capitalize;
   }
 
 a {

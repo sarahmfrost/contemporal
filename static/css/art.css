@@ -4,14 +4,16 @@
     text-align: center;
     font-size: 25px;
     padding-bottom: 10px;
-    font-family: canada-type-gibson, sans-serif;
+    font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 700;
     top: 100px;
     left: 3vw;
     position: absolute;
 }
-
+.body{
+    font-family: "Rubik";
+}
 /* hr {
     position: absolute;
     left: 3vw;
