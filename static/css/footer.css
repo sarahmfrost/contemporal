@@ -208,27 +208,21 @@
 }
 
 /* positioning for AI ART bottom*/
-.main {
+.navbar a.main {
   position: absolute;
   white-space: nowrap;
   left: 43%;
   right: 47.36%;
-  top: 2020px;
-  bottom: 65.85%;
+  bottom: 63.85%;
 
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #C10628;
+  color: #C10628
 }
 
-/* positioning for art */
 .navbar a.pos4 {
   position: absolute;
   left: 34.38%;
@@ -247,23 +241,21 @@
 }
 
 /* styling for the divider */
-.footer hr {
+.navbar hr{
   position: absolute;
   left: 15.28%;
   right: 15.28%;
-  top: 2070px;
-  bottom: 54.15%;
+  bottom: 48.15%;
 
   border: 1px solid #C10628;
 }
 
-/* formatting for copyright */
-.copyright {
+
+.navbar a.copyright{
   position: absolute;
   left: 40%;
   right: 50.69%;
-  top: 2150px;
-  bottom: 8.54%;
+  bottom: 20%; 
 
   font-family: 'Rubik', sans-serif;
   font-style: normal;
@@ -271,26 +263,21 @@
   font-size: 14px;
   line-height: 20px;
 
-  text-align: center;
-
   color: #C10628;
 }
 
-/* formatting for privacy */
-.privacy {
+
+.navbar a.privacy {
   position: absolute;
   left: 50.14%;
   right: 42.71%;
-  top: 2150px;
-  bottom: 8.54%;
+  bottom: 20%;
 
   font-family: 'Rubik';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-
-  text-align: center;
 
   color: #C10628;
 }
