@@ -2,6 +2,21 @@ html{
     box-sizing: border-box;
 }
 
+
+.row {
+  width: 50%;
+  float: right;
+}
+
+.twoColumns {
+  width: 100%;
+}
+
+.fw-block {
+  padding-top: 200px;
+  padding-left: 75px;
+}
+
 .title-box-container{
     position: absolute;
     font-family: Roboto, sans-serif;
@@ -29,7 +44,7 @@ html{
   color: #FFFFFF;
 }
 .panel-title {
- font-size: 25px; 
+ font-size: 25px;
  color: #FFFFFF;
  font-family: 'Open Sans', sans-serif;
 }
